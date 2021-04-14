@@ -1,0 +1,12 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: up-and-down-ingress
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: up-and-down-client-static-ip
+    networking.gke.io/managed-certificates: up-and-down-certificate
+    kubernetes.io/ingress.allow-http: "false"
+spec:
+  backend:
+    serviceName: client-service
+    servicePort: 80

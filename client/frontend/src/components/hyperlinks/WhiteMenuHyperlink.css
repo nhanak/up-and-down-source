@@ -1,0 +1,39 @@
+.white-menu-hyperlink{
+    cursor: pointer;
+    color:white;
+    font-size:50px;
+    margin-left:50px;
+    margin-top:0px;
+    margin-bottom:0px;
+    display:block;
+}
+
+.white-menu-hyperlink:hover{
+    color:grey;
+    transition:all ease 0.3s;
+}
+
+
+@media only screen and (max-width: 686px) {
+    .white-menu-hyperlink {
+      font-size:48px;
+      margin-left:20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .white-menu-hyperlink {
+      font-size:35px;
+      margin-left:20px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .white-menu-hyperlink {
+      font-size:25px;
+      margin-left:20px;
+    }
+}
+a{
+    text-decoration: none;
+}

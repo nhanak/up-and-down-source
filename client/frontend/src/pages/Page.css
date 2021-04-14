@@ -1,0 +1,77 @@
+.standard-page{
+    text-align:center;
+    margin-top:50px;
+    display:block;  
+}
+
+.game-page{
+    text-align:center;
+    display:block;  
+}
+
+.standard-text{
+    font-size:18px;
+    color:white;
+    text-align:left;
+    line-height:34px;
+    margin-bottom:30px;
+}
+
+.standard-text.underline{
+    text-decoration: underline;
+}
+
+.standard-text.centered-text{
+ text-align:center;
+}
+
+.standard-text-container{
+    max-width:692px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.page-subheader{
+    color:white;
+    font-size:40px;
+    text-decoration: underline;
+}
+
+
+.flex-center-page-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.page-header{
+    font-size:100px;
+    color:white;
+}
+
+@media only screen and (max-width: 786px) {
+    .page-header{
+        font-size:70px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .page-header{
+        font-size:60px;
+    }
+}
+
+
+@media only screen and (max-width:489px){
+    .standard-text-container{
+        width:300px;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .standard-text-container{
+        width:250px;
+    }
+}

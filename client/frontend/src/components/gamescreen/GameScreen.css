@@ -1,0 +1,95 @@
+.main-canvas{
+    background-color: black;
+    border:1px solid white;
+    display: block;
+    touch-action: manipulation;
+    position:relative;
+    z-index:1;
+}
+
+body{
+    margin:0px;
+    background-color: black;
+}
+
+.main-canvas-container{
+    position:relative;
+}
+
+.playerStatus{
+    display:inline;
+}
+
+.player1Status{
+    color:rgb(0,255,0);
+}
+
+.player2Status{
+    color:red
+}
+
+.playerStatusDiv{
+    background-color: black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.enemy-status-bar{
+    background-color:white;
+    color:black;
+    touch-action: manipulation;
+}
+
+.player-status-bar{
+    background-color:black;
+    color:white;
+    border:1px solid white;
+    touch-action: manipulation;
+}
+
+.status-bar{
+    display: flex;
+    width:100%;
+}
+
+.resources-column{
+    display: flex;
+    width:150px;
+    margin-right:10px;
+}
+   
+.outer-status-bar-column{
+    flex:50%;
+}
+
+.game-screen-wrapper{
+    padding:0;
+    margin:0;
+    max-width:500px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0px;
+}
+
+.controls-div{
+    margin-top:10px;
+    touch-action: manipulation;
+}
+
+.image-and-text-flex {
+    display: flex;
+    align-items:center;
+ }
+
+ .health-image{
+     width:20px;
+     height:20px;
+     margin-right:5px;
+ }
+
+ .player-name{
+     text-align:left;
+     margin-left:10%;
+ }

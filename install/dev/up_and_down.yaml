@@ -1,0 +1,80 @@
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  namespace: default
+  name: gameservers-manager
+rules:
+- apiGroups: ["allocation.agones.dev"] # "" indicates the core API group
+  resources: ["gameserverallocations"]
+  verbs: ["get", "watch", "list", "create", "delete"]
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: matchfunction
+  namespace: open-match
+  labels:
+    app: open-match
+    component: matchfunction
+spec:
+  containers:
+  - name: matchfunction
+    image: matchfunction
+    imagePullPolicy: Never
+    ports:
+    - name: grpc
+      containerPort: 50502
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: matchfunction-service
+  namespace: open-match
+  labels:
+    app: open-match
+    component: matchfunction
+spec:
+  selector:
+    app: open-match
+    component: matchfunction
+  clusterIP: None
+  type: ClusterIP
+  ports:
+  - name: grpc
+    protocol: TCP
+    port: 50502
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: director
+spec:
+  containers:
+  - name: director
+    image: director
+    imagePullPolicy: Never
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: client
+  labels:
+    app: client-app
+spec:
+  containers:
+  - name: client
+    image: client
+    imagePullPolicy: Never
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: client-service
+spec:
+  type: NodePort
+  selector:
+    app: client-app
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8080

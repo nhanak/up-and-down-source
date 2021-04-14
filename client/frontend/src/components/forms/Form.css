@@ -1,0 +1,25 @@
+.form-field-error{
+    color:white;
+    font-size:12px;
+    display:block;
+}
+
+.form-field-error-title{
+    color:white;
+    font-size:17px;
+    font-weight: bold;
+    display:block;
+}
+
+.form-field-error-div{
+    background-color:#821717;
+    margin-top:10px;
+    padding-top:5px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+}
+
+.field-label-and-error-div{
+    display:inline;
+}

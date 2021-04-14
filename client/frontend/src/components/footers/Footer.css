@@ -1,0 +1,86 @@
+.footer-privacy-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-item-left{
+    margin-right:10px;
+    display:inline;
+}
+
+.footer-item-right{
+    margin-left:10px;
+    display:inline;
+}
+
+.footer{
+    flex-shrink: 0;
+    height:50px;
+}
+
+.inner-footer-privacy-container{
+    text-align: center;
+}
+
+.footer-row{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.made-with-love{
+    color:white;
+}
+
+.heart-img{
+    height:25px;
+    margin-right:5px;
+    margin-left:5px;
+  
+}
+
+.social-image{
+    height:38px;
+    margin-left:20px;
+    cursor:pointer;
+}
+
+.size-single-flex{
+    -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;         /* OLD - Firefox 19- */
+    -webkit-flex: 1;          /* Chrome */
+    -ms-flex: 1;              /* IE 10 */
+    flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.socials-container{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    height:50px!important;
+
+}
+
+.made-with-love-container{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+.made-with-love-container{
+    display:none;
+}
+.footer-privacy-container{
+    justify-content: flex-start;
+}
+}
+
+@media only screen and (max-width: 478px) {
+    .footer-row{
+        margin-left:10px;
+        margin-right:10px;
+    }
+}

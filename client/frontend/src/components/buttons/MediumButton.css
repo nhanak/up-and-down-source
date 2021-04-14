@@ -1,0 +1,32 @@
+.medium-button{
+    font-size:15px;
+    height:30px;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+.medium-button:hover{
+    cursor:pointer;
+}
+
+@media only screen and (min-width: 480px) {
+    .medium-button{
+        font-size:16px;
+        height:34px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .medium-button{
+        font-size:16px;
+        height:34px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .medium-button{
+        font-size:16px;
+        height:34px;
+    }
+}

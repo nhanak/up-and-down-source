@@ -1,0 +1,84 @@
+.home-splash-text{
+    font-size:200px;
+    color:white;
+}
+.tip-text{
+    color:grey;
+    margin-bottom:50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.error-text{
+    color:red;
+    margin-bottom:50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nickname-error-text{
+    color:red;
+    font-size: 13px;
+    position: absolute;
+    left:0;
+    right:0;
+    margin-top:7px;
+}
+
+.splash-div{
+    text-align:center;
+    margin-top:20%;
+    display:block;
+}
+
+.play-button-div{
+    margin-top:40px;
+}
+
+@media only screen and (min-width: 300px) {
+    .splash-div{
+        margin-top:12%;
+    }
+    .home-splash-text{
+        font-size:60px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .splash-div{
+        margin-top:14%;
+    }
+    .home-splash-text{
+        font-size:77px;
+        margin-bottom:30px;
+    }
+}
+
+
+@media only screen and (min-width: 700px) {
+    .home-splash-text{
+        font-size:100px;
+        margin-bottom:30px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .home-splash-text{
+        font-size:150px;
+        margin-bottom:30px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .home-splash-text{
+        font-size:200px;
+        margin-bottom:30px;
+    }
+}
+
+.nickname-div{
+    max-width:340px;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+}

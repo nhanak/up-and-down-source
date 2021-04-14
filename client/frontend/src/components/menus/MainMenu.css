@@ -1,0 +1,124 @@
+.main-menu-page-container{
+    position:absolute;
+    left:0;
+    z-index:99;
+    overflow: hidden;
+}
+
+.main-menu-page-container.fade-in {
+    width:100%;
+    height:100vh;
+    background-color:rgba(0,0,0,0.8);
+    animation: menuPageFadeIn ease 0.5s;
+    -webkit-animation: menuPageFadeIn ease 0.5s;
+    -moz-animation: menuPageFadeIn ease 0.5s;
+    -o-animation:  menuPageFadeIn ease 0.5ss;
+    -ms-animation:  menuPageFadeIn ease 0.5s;
+    }
+    @keyframes menuPageFadeIn {
+        0% {background-color:rgba(0,0,0,0)}
+        100% {background-color:rgba(0,0,0,0.8)}
+    }
+    
+    @-moz-keyframes menuPageFadeIn {
+        0% {background-color:rgba(0,0,0,0)}
+        100% {background-color:rgba(0,0,0,0.8)}
+    }
+    
+    @-webkit-keyframes menuPageFadeIn {
+        0% {background-color:rgba(0,0,0,0)}
+        100% {background-color:rgba(0,0,0,0.8)}
+    }
+    
+    @-o-keyframes menuPageFadeIn {
+        0% {background-color:rgba(0,0,0,0)}
+        100% {background-color:rgba(0,0,0,0.8)}
+    }
+    
+    @-ms-keyframes menuPageFadeIn {
+        0% {background-color:rgba(0,0,0,0)}
+        100% {background-color:rgba(0,0,0,0.8)}
+    }
+
+    .main-menu-page-container.fade-out {
+        width:0;
+        height:0;
+        background-color:rgba(0,0,0,0.0);
+        animation: menuPageFadeOut ease 0.5s;
+        -webkit-animation: menuPageFadeOut ease 0.5s;
+        -moz-animation: menuPageFadeOut ease 0.5s;
+        -o-animation:  menuPageFadeOut ease 0.5ss;
+        -ms-animation:  menuPageFadeOut ease 0.5s;
+        }
+        @keyframes menuPageFadeOut {
+            0% {width:100%; height:100%; background-color:rgba(0,0,0,0.8)}
+            99% {width:100%; height:100%;}
+            100% {width:0;background-color:rgba(0,0,0,0.0)}
+        }
+        
+        @-moz-keyframes menuPageFadeOut {
+            0% {width:100%; height:100%; background-color:rgba(0,0,0,0.8)}
+            99% {width:100%; height:100%;}
+            100% {width:0;background-color:rgba(0,0,0,0.0)}
+        }
+        
+        @-webkit-keyframes menuPageFadeOut {
+            0% {width:100%; height:100%; background-color:rgba(0,0,0,0.8)}
+            99% {width:100%; height:100%;}
+            100% {width:0;background-color:rgba(0,0,0,0.0)}
+        }
+        
+        @-o-keyframes menuPageFadeOut {
+            0% {width:100%; height:100%; background-color:rgba(0,0,0,0.8)}
+            99% {width:100%; height:100%;}
+            100% {width:0;background-color:rgba(0,0,0,0.0)}
+        }
+        
+        @-ms-keyframes menuPageFadeOut {
+            0% {width:100%; height:100%; background-color:rgba(0,0,0,0.8)}
+            99% {width:100%; height:100%;}
+            100% {width:0;background-color:rgba(0,0,0,0.0)}
+        }
+
+
+
+
+
+
+.main-menu-container.offscreen{
+    left:100%;
+}
+
+.main-menu-container{
+    align-items: flex-start;
+    transition:all 0.5s;
+    overflow: hidden;
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: black;
+    border-left:1px solid white;
+    position:relative;
+    height:100vh;
+    width:50%;
+    left:50%;
+    padding-top:200px;
+}
+
+.menu-link-wrapper{
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+@media only screen and (max-height: 900px) {
+    .main-menu-container{
+        padding-top:150px;
+    }
+}
+
+
+@media only screen and (max-height: 600px) {
+    .main-menu-container{
+    padding-top:100px;
+    }
+}

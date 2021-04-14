@@ -1,0 +1,47 @@
+.play-again-box-container{
+    border:1px solid white;
+    color:white;
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:250px;
+    height:250px;
+    background-color:black;
+    z-index:99;
+}
+
+.play-again-button-row{
+    margin-bottom:15px;
+}
+
+.play-again-bottom-row{
+    margin-bottom:0px;
+}
+
+.victory-message{
+    font-size:34px;
+    font-weight:bold;
+    margin-bottom:22px;
+    margin-top:0px;
+}
+
+.search-text{
+    color:white;
+    font-size: 20px;
+    margin:0px;
+}
+
+.error-text-play-again-box{
+    font-size:13px;
+    color:red;
+}
+
+.search-status-div{
+    margin:0px;
+    padding:0px;
+}

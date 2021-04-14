@@ -1,0 +1,11 @@
+.white-outline-button{
+    background:black;
+    color:white;
+    border: 1px solid white;
+}
+
+.hover-grey:hover{
+    border: 1px solid grey;
+    color:grey;
+    transition: all 0.3s ease;
+}

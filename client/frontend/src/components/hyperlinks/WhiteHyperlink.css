@@ -1,0 +1,16 @@
+.white-hyperlink{
+    color:white;
+    font-size:16px;
+    cursor: pointer;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.white-hyperlink:hover{
+    color:grey;
+    transition:all ease 0.3s;
+}
+
+a{
+    text-decoration: none;
+}
